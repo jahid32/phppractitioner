@@ -4,7 +4,7 @@ require_once "Task.php";
 
 
 
-$tasks = $app['db']->selectAll('todos', 'Task');
-$users = $app['db']->selectAll('users', 'Task');
+$tasks = App::get('db')->selectAll('todos', 'Task');
+$users = App::get('db')->selectAll('users', 'Task');
 
 require_once 'views/index.tpl.php';

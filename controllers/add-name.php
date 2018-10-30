@@ -1,6 +1,6 @@
 <?php
 
-$app['db']->insert('users', [
+App::get('db')->insert('users', [
   'name' => $_POST['name'],
 ]);
 

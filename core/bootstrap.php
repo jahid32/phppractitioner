@@ -1,12 +1,9 @@
 <?php
 
-$app = [];
-$app['config'] = require_once 'config.php';
 
-//require_once 'core/Router.php';
-//require_once 'core/Request.php';
-//require_once 'core/database/Connection.php';
-//require_once 'core/database/QueryBuilder.php';
+App::bind('config', require 'config.php');
 
+App::bind('db', new QueryBuilder(
+  Connection::make(App::get('config')['database'])
+  ));
 
-$app['db'] = new QueryBuilder( Connection::make($app['config']['database']));
