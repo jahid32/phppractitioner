@@ -1,0 +1,15 @@
+{
+    "name": "suriaya/oopbootcamp",
+    "authors": [
+        {
+            "name": "Md Mostafizur Rahman",
+            "email": "jahid32@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "classmap": [
+            "./"
+        ]
+    }
+}
